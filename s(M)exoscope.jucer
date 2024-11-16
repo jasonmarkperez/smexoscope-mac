@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="PJFjzP" name="s(M)exoscope" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.smartelectronix.sMexoscope" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="1" buildAU="1" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="s(M)exoscope" pluginDesc="s(M)exoscope"
+              pluginManufacturer="Smartelectronix" pluginManufacturerCode="Manu"
+              pluginCode="Pjfj" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="sMexoscopeAU" pluginRTASCategory="" aaxIdentifier="com.yourcompany.sMexoscope"
+              pluginAAXCategory="2" companyName="Smartelectronix" companyWebsite="http://bram.smartelectronix.com/index.php"
+              companyEmail="bram@smartelectronix.com" pluginFormats="buildVST,buildVST3,buildAU"
+              jucerFormatVersion="1">
+  <MAINGROUP id="NRqKvS" name="s(M)exoscope">
+    <GROUP id="{8882B707-87AE-81AD-77F7-07E4F1E916E0}" name="Source">
+      <GROUP id="{BE85F118-F009-ECFF-5155-641A244899E4}" name="images">
+        <FILE id="NOsgzX" name="blue_knob1_4.png" compile="0" resource="1"
+              file="Source/images/blue_knob1_4.png"/>
+        <FILE id="Wyx5Va" name="body.png" compile="0" resource="1" file="Source/images/body.png"/>
+        <FILE id="jitzD6" name="free_etc.png" compile="0" resource="1" file="Source/images/free_etc.png"/>
+        <FILE id="pgDHpJ" name="heads.png" compile="0" resource="1" file="Source/images/heads.png"/>
+        <FILE id="vPDb5A" name="lefr_right.png" compile="0" resource="1" file="Source/images/lefr_right.png"/>
+        <FILE id="aGdAj2" name="off_on.png" compile="0" resource="1" file="Source/images/off_on.png"/>
+        <FILE id="ZfwtPe" name="readout.png" compile="0" resource="1" file="Source/images/readout.png"/>
+        <FILE id="C1vc3R" name="slider_new.png" compile="0" resource="1" file="Source/images/slider_new.png"/>
+      </GROUP>
+      <GROUP id="{57C0C4A7-410C-0E06-0866-E69DA5EB9B22}" name="BaseCode">
+        <FILE id="oFsaPT" name="Defines.h" compile="0" resource="0" file="Source/Defines.h"/>
+        <FILE id="RV0RBz" name="SmartelectronixDisplay.cpp" compile="1" resource="0"
+              file="Source/SmartelectronixDisplay.cpp"/>
+        <FILE id="iNFQBg" name="SmartelectronixDisplay.h" compile="0" resource="0"
+              file="Source/SmartelectronixDisplay.h"/>
+        <FILE id="I0WFnx" name="WaveDisplay.cpp" compile="1" resource="0" file="Source/WaveDisplay.cpp"/>
+        <FILE id="BR4lym" name="WaveDisplay.h" compile="0" resource="0" file="Source/WaveDisplay.h"/>
+      </GROUP>
+      <GROUP id="{F06C4D03-0C30-FE1D-1128-D90C58974084}" name="uielements">
+        <FILE id="d0AbVk" name="CustomKnob.cpp" compile="1" resource="0" file="Source/CustomKnob.cpp"/>
+        <FILE id="JI3Irg" name="CustomKnob.h" compile="0" resource="0" file="Source/CustomKnob.h"/>
+        <FILE id="EHQ9Nq" name="CustomSlider.cpp" compile="1" resource="0"
+              file="Source/CustomSlider.cpp"/>
+        <FILE id="Tgs4AZ" name="CustomSlider.h" compile="0" resource="0" file="Source/CustomSlider.h"/>
+        <FILE id="L9ajdF" name="JuceMultiStateButton.cpp" compile="1" resource="0"
+              file="Source/JuceMultiStateButton.cpp"/>
+        <FILE id="Byz8xQ" name="JuceMultiStateButton.h" compile="0" resource="0"
+              file="Source/JuceMultiStateButton.h"/>
+        <FILE id="tQSRLh" name="TextElement.cpp" compile="1" resource="0" file="Source/TextElement.cpp"/>
+        <FILE id="rvzvtM" name="TextElement.h" compile="0" resource="0" file="Source/TextElement.h"/>
+      </GROUP>
+      <FILE id="SbL6Ag" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="DApdpv" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="OQX02Y" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="Vr8amY" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="s(M)exoscope"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="s(M)exoscope"
+                       osxCompatibility="10.7 SDK" osxArchitecture="64BitUniversal"
+                       osxSDK="default" linkTimeOptimisation="1" macOSDeploymentTarget="10.7"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
